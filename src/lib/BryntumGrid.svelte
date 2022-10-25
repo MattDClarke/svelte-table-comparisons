@@ -3,8 +3,6 @@
   import { Grid } from "@bryntum/grid";
   import { GridConfig } from "./GridConfig.js";
 
-  let gridContainer = GridConfig.appendTo;
-
   export let engine = null;
 
   onMount(() => {
@@ -19,5 +17,3 @@
     }
   });
 </script>
-
-<div bind:this={gridContainer} />

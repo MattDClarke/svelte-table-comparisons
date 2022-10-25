@@ -1,11 +1,22 @@
 <script>
-  import BryntumGrid from "./lib/BryntumGrid.svelte";
-  import "@bryntum/grid/grid.stockholm.css";
+  import Router from "svelte-spa-router";
+  import Home from "./routes/Home.svelte";
+  import Bryntum from "./routes/Bryntum.svelte";
+  import NotFound from "./routes/NotFound.svelte";
+
+  let routes = {
+    "/": Home,
+    "/bryntum-grid": Bryntum,
+
+    "*": NotFound,
+  };
 </script>
 
-<main>
-  <BryntumGrid />
-</main>
+<nav>
+  <a href="#/">Home</a>
+  <a href="#/bryntum-grid">Bryntum Grid</a>
+</nav>
 
-<style>
-</style>
+<main>
+  <Router {routes} />
+</main>
