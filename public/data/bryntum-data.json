@@ -1,0 +1,7 @@
+{
+  "success": "true",
+  "data": [
+    { "id": 1, "name": "Dan Stevenson", "city": "Los Angeles" },
+    { "id": 2, "name": "Talisha Babin", "city": "Paris" }
+  ]
+}
