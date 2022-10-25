@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "name": "Tiger Nixon",
+      "position": "System Architect",
+      "Office": "Edinburgh",
+      "age": "44",
+      "start-date": "2011/04/25",
+      "salary": "$320,800"
+    },
+    {
+      "name": "Bob Smith",
+      "position": "System Designer",
+      "Office": "London",
+      "age": "24",
+      "start-date": "2016/04/25",
+      "salary": "$120,800"
+    }
+  ]
+}
