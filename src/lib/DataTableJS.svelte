@@ -26,22 +26,18 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>Position</th>
-      <th>Office</th>
+      <th>City</th>
+      <th>Job</th>
       <th>Age</th>
-      <th>Start date</th>
-      <th>Salary</th>
     </tr>
   </thead>
   <tbody />
   <tfoot>
     <tr>
       <th>Name</th>
-      <th>Position</th>
-      <th>Office</th>
+      <th>City</th>
+      <th>Job</th>
       <th>Age</th>
-      <th>Start date</th>
-      <th>Salary</th>
     </tr>
   </tfoot>
 </table>
