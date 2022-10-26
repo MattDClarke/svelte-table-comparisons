@@ -1,4 +1,4 @@
-import { AjaxStore, StringHelper } from "@bryntum/grid";
+import { AjaxStore } from "@bryntum/grid";
 
 const store = new AjaxStore({
   readUrl: "/data/data.json",
@@ -10,7 +10,6 @@ export const GridConfig = {
   features: {
     filter: true,
     stripe: true,
-    quickFind: true,
   },
 
   tbar: [

@@ -1,26 +1,27 @@
 <script>
+  import "datatables.net-dt/css/jquery.dataTables.min.css";
   import jQuery from "jquery";
   import { onMount } from "svelte";
-  import { load } from "./data.js";
 
   let el; // table element
   let table; // table object (API)
 
   onMount(() => {
-    table = jQuery(el).DataTable();
-    table.init();
-    load().then((rows) => {
-      table.rows.add(rows).draw();
+    table = jQuery(el).DataTable({
+      ajax: {
+        url: "/data/data.json",
+        dataSrc: "data",
+      },
+      columns: [
+        { data: "name" },
+        { data: "city" },
+        { data: "job" },
+        { data: "age" },
+      ],
     });
+    table.init();
   });
 </script>
-
-<svelte:head>
-  <link
-    rel="stylesheet"
-    href="//cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css"
-  />
-</svelte:head>
 
 <table bind:this={el} class="display" style="width:100%">
   <thead>
@@ -32,12 +33,4 @@
     </tr>
   </thead>
   <tbody />
-  <tfoot>
-    <tr>
-      <th>Name</th>
-      <th>City</th>
-      <th>Job</th>
-      <th>Age</th>
-    </tr>
-  </tfoot>
 </table>

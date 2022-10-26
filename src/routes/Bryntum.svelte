@@ -1,11 +1,10 @@
 <script>
-  import "@bryntum/grid/grid.stockholm.css";
   import BryntumGrid from "../lib/BryntumGrid.svelte";
 </script>
 
-<main id="bryntum-grid">
+<div id="bryntum-grid">
   <BryntumGrid />
-</main>
+</div>
 
 <style>
   #bryntum-grid {
