@@ -48,7 +48,7 @@
 
   onMount(() => {
     new Grid(gridContainer, gridOptions);
-    client("data/bryntum-data.json").then(({ data }) => {
+    client("data/data.json").then(({ data }) => {
       gridOptions.api.setRowData(data);
     });
   });
@@ -57,16 +57,16 @@
 <div
   id="datagrid"
   class="ag-theme-alpine"
-  style="height: 600px; width:500px;"
+  style="height: 600px; width:100%;"
   bind:this={gridContainer}
 />
 
 <style>
-  #datagrid {
+  /* #datagrid {
     --ag-header-foreground-color: blue;
   }
   :global(.ag-header-cell) {
     background: orange;
     font-size: 16px;
-  }
+  } */
 </style>

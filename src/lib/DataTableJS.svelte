@@ -1,6 +1,6 @@
 <script>
   import jQuery from "jquery";
-  import { onMount, tick } from "svelte";
+  import { onMount } from "svelte";
   import { load } from "./data.js";
 
   let el; // table element
@@ -8,7 +8,7 @@
 
   onMount(() => {
     table = jQuery(el).DataTable();
-
+    table.init();
     load().then((rows) => {
       table.rows.add(rows).draw();
     });

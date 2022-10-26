@@ -1,7 +1,7 @@
 import { AjaxStore, StringHelper } from "@bryntum/grid";
 
 const store = new AjaxStore({
-  readUrl: "/data/bryntum-data.json",
+  readUrl: "/data/data.json",
   autoLoad: true,
 });
 
